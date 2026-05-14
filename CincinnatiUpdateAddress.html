@@ -420,7 +420,7 @@
           const formData = {};
           const formElements = form.querySelectorAll("input, textarea, select");
           formElements.forEach(element => {
-            if (!element.name || ["Form_Captured_Data__c", "Form_Missing_Data__c", "00NU7000008TS4L", "requestTypeRadios", "changeGaragingAddressRadio", "poBoxRadio"].includes(element.name)) return;
+            if (!element.name || ["Form_Captured_Data__c", "Form_Missing_Data__c", "All_Form_Data__c", "requestTypeRadios", "changeGaragingAddressRadio", "poBoxRadio"].includes(element.name)) return;
             if (element.disabled) return;
             let fieldName = element.name.replace(/__c$/, "");
             const skipFields = ["company", "delete_Action_Form", "lead_source", "phone", "status", "last_name", "first_name", "retURL", "oid"];
